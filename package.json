@@ -1,6 +1,6 @@
 {
   "name": "WCAG Contrast Checker",
-  "version": "0.9",
+  "version": "1.0",
   "description": "WCAG 2.2 Color Contrast Calculator",
   "repository": {
     "type": "git",
