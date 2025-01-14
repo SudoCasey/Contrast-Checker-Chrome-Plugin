@@ -134,6 +134,7 @@ dist
 
 # zip
 /zip
+*.zip
 
 # misc
 .DS_Store
