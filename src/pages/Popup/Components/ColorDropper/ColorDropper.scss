@@ -1,0 +1,12 @@
+.colorDropper{
+    &__Icon{
+        cursor: pointer;
+        transition: all 0.15s ease;
+        padding: 5px;
+
+        &:hover{
+            transform: scale(1.2);
+            transition: all 0.15s ease;
+        }
+    }
+}

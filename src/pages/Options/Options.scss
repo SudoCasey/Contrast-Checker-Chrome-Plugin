@@ -1,0 +1,69 @@
+html{
+  background-color: #1e1e1e;
+}
+.OptionsPage {
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  min-height: 100vh;
+  max-width: 800px;
+  margin:0 auto;
+}
+
+.OptionsContainer {
+  width: 100%;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+
+  & h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #ffffff;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+  }
+
+  & h2 {
+    text-align: left;
+    font-size: 1.5rem;
+    margin: 20px 0 10px;
+  }
+}
+
+.OptionsSubtitle {
+  font-size: 1.4rem;
+}
+
+.OptionsText {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.OptionsSwitch {
+  margin-top: 10px;
+  font-size: 1rem;
+
+  & .MuiFormControlLabel-label {
+    color: #fff;
+  }
+}
+
+.OptionsLink {
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.List {
+  margin-top: 10px;
+  font-size: 1rem;
+
+  & .MuiListItem-root {
+    padding: 5px 0;
+  }
+}

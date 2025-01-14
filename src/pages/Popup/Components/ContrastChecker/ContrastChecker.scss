@@ -1,0 +1,25 @@
+.contrastChecker{
+    &__Grid{
+        > div{
+            margin-top:0;
+
+            h2, h3{
+                color: #FFF;
+                text-align: center;
+                margin: 0 auto;
+            }
+            label{
+                color: #FFF;
+            }
+            fieldset{
+                border-color: #FFF;
+            }
+            .MuiInputBase-root:hover fieldset{
+                border-color: #767676;
+            }
+        }
+        /*> div:nth-of-type(odd){
+            border-right: 2px solid #FFF!important;
+        }*/
+    }
+}

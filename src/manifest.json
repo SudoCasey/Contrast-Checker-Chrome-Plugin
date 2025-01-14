@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Contrast Checker",
+  "description": "WCAG 2.2 Color Contrast Calculator",
+  "options_page": "options.html",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "32": "Brush_Icon-32.png",
+      "128": "Brush_Icon-128.png"
+    }
+  },
+  "icons": {
+    "32": "Brush_Icon-32.png",
+    "128": "Brush_Icon-128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "Brush_Icon-16.png",
+        "Brush_Icon-32.png",
+        "Brush_Icon-48.png",
+        "Brush_Icon-128.png"
+      ],
+      "matches": []
+    }
+  ]
+}
