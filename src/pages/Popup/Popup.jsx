@@ -4,10 +4,6 @@ import './Popup.scss';
 import ContrastChecker from './Components/ContrastChecker/ContrastChecker';
 import ColorTypeSwitch from './Components/ColorTypeSwitch/ColorTypeSwitch';
 import { Typography, Grid } from '@mui/material';
-import '@fontsource/roboto/300.css';
-import '@fontsource/roboto/400.css';
-import '@fontsource/roboto/500.css';
-import '@fontsource/roboto/700.css';
 
 const Popup = () => {
   const [checked, setChecked] = React.useState(true);
