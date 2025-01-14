@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Contrast Checker",
+  "name": "WCAG Contrast Checker",
   "description": "WCAG 2.2 Color Contrast Calculator",
   "options_page": "options.html",
   "action": {

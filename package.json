@@ -1,11 +1,10 @@
 {
-  "name": "chrome-extension-boilerplate-react",
-  "version": "5.0.4",
-  "description": "A chrome extension boilerplate built with React 18, Webpack 5, and Webpack Dev Server 4",
-  "license": "MIT",
+  "name": "WCAG Contrast Checker",
+  "version": "0.9",
+  "description": "WCAG 2.2 Color Contrast Calculator",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lxieyang/chrome-extension-boilerplate-react.git"
+    "url": "https://github.com/SudoCasey/Contrast-Checker-Chrome-Plugin"
   },
   "scripts": {
     "build": "node utils/build.js",
