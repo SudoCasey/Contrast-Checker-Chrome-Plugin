@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "WCAG Contrast Checker",
-  "description": "WCAG 2.2 Color Contrast Calculator",
+  "name": "WCAG Color Contrast Tool",
+  "description": "WCAG 2.2 Color Contrast Calculator & Color Grabber - Check text or image colors on any page",
   "options_page": "options.html",
   "action": {
     "default_popup": "popup.html",
