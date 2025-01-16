@@ -1,5 +1,5 @@
 # WCAG 2.2 Color Contrast Calculator - Chrome Plugin
-[WCAG 2.2 Contrast Checker - Chrome Web Store](https://chromewebstore.google.com/detail/wcag-contrast-checker/dgldkjfbookpojpaedkfeobhndpjlbaa?authuser=0&hl=en&pli=1)
+[WCAG 2.2 Contrast Checker - Chrome Web Store](https://chromewebstore.google.com/detail/wcag-color-contrast-tool/dgldkjfbookpojpaedkfeobhndpjlbaa)
 
 React plugin for Chrome (Manifest v3) with Webpack as the dev server to auto-reload when making changes.
 
