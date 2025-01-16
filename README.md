@@ -17,4 +17,4 @@ The plugin itself is fully accessible to WCAG 2.2 AA standards, please let me kn
 
 ## TO DO
 
-- Toggleable settings for default behaviour (hex/rgb, copy value to clipboard when using color dropper)
+- Toggleable settings for default behaviour (~~hex/rgb~~, copy value to clipboard when using color dropper)
