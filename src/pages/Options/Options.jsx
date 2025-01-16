@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEffect, useRef } from 'react';
 import './Options.scss';
 import Typography from '@mui/material/Typography';
 import {
@@ -6,11 +7,38 @@ import {
   List,
   ListItem,
   Link,
-  /*Switch,
-  FormControlLabel,*/
+  Switch,
+  FormControlLabel,
 } from '@mui/material';
+import { saveOption, restoreOption } from '../../utils/storageUtils';
 
 const Options = ({ title }) => {
+  const hasRendered = useRef(false);
+  const [defaultColorType, setDefaultColorType] = React.useState(true);
+
+  useEffect(() => {
+    // restore user settings on page load
+    async function restore(option) {
+      try {
+        const optionValue = await restoreOption(option);
+        setDefaultColorType(optionValue);
+      } catch (error) {
+        console.error('Error restoring option: ', error);
+      }
+    }
+    restore('defaultColorType');
+    //restore(other settings)
+  }, []);
+
+  useEffect(() => {
+    if (!hasRendered.current) {
+      hasRendered.current = true;
+      return;
+    }
+
+    saveOption({ name: 'defaultColorType', value: defaultColorType });
+  }, [defaultColorType]);
+
   return (
     <div className="OptionsPage">
       <Grid container spacing={3} className="OptionsContainer">
@@ -41,17 +69,23 @@ const Options = ({ title }) => {
             ratio, while making the minimum possible change to the color value.
           </Typography>
           {/* Settings */}
-          {/*<Typography variant="h5" component="h2" className="OptionsSubtitle">
+          <Typography variant="h5" component="h2" className="OptionsSubtitle">
             Settings
           </Typography>
           <Typography variant="h6" component="h3" className="OptionsSubtitle">
             Default Color Value Format
           </Typography>
           <FormControlLabel
-            control={<Switch defaultChecked color="primary" />}
+            control={
+              <Switch
+                checked={defaultColorType}
+                onChange={() => setDefaultColorType(!defaultColorType)}
+                color="primary"
+              />
+            }
             className="OptionsSwitch"
-            label="Hex"
-          />*/}
+            label={defaultColorType ? 'Hex' : 'RGB'}
+          />
           {/* TODO: Enable/Disable 'add to clipboard' when using color dropper */}
           {/*<FormControlLabel
             control={<Switch color="primary" />}

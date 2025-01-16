@@ -17,7 +17,7 @@ const ColorTypeSwitch = (props) => {
       <FormControlLabel
         checked={props.checked}
         onChange={props.onChange}
-        control={<Switch size="small" />}
+        control={<Switch size="small" checked={props.checked} />}
         label={props.checked ? 'Hex' : 'RGB'}
         aria-live="polite"
         onKeyDown={handleKeydown}
