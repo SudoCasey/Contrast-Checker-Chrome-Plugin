@@ -1,5 +1,4 @@
 import React from 'react';
-import { useEffect } from 'react';
 import { Switch, FormGroup, FormControlLabel } from '@mui/material';
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
