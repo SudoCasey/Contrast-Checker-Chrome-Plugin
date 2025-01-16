@@ -4,6 +4,7 @@ import './Popup.scss';
 import ContrastChecker from './Components/ContrastChecker/ContrastChecker';
 import ColorTypeSwitch from './Components/ColorTypeSwitch/ColorTypeSwitch';
 import { Typography, Grid } from '@mui/material';
+import { restoreOption as getOption } from '../../utils/storageUtils';
 
 const Popup = () => {
   const [checked, setChecked] = React.useState(true);
@@ -13,15 +14,13 @@ const Popup = () => {
   };
 
   useEffect(() => {
-    const colorType = localStorage.getItem('colorType');
-    if (colorType) {
-      setChecked(JSON.parse(colorType));
+    async function getOptions(optionName) {
+      const option = await getOption(optionName);
+      setChecked(option);
     }
-  }, []);
 
-  useEffect(() => {
-    localStorage.setItem('colorType', checked);
-  }, [checked]);
+    getOptions('defaultColorType');
+  }, []);
 
   return (
     <div className="App">

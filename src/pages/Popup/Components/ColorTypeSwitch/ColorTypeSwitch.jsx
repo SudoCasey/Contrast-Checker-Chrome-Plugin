@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEffect } from 'react';
 import { Switch, FormGroup, FormControlLabel } from '@mui/material';
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
@@ -17,7 +18,7 @@ const ColorTypeSwitch = (props) => {
       <FormControlLabel
         checked={props.checked}
         onChange={props.onChange}
-        control={<Switch size="small" />}
+        control={<Switch size="small" checked={props.checked} />}
         label={props.checked ? 'Hex' : 'RGB'}
         aria-live="polite"
         onKeyDown={handleKeydown}
