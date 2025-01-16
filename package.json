@@ -1,7 +1,7 @@
 {
   "name": "WCAG Color Contrast Tool",
   "version": "1.1",
-  "description": "WCAG 2.2 Color Contrast Calculator",
+  "description": "WCAG 2.2 Color Contrast Calculator & Color Grabber - Check text or image colors on any page",
   "repository": {
     "type": "git",
     "url": "https://github.com/SudoCasey/Contrast-Checker-Chrome-Plugin"
